@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-const Resume = () => {
+const Experience = () => {
   return (
     <div>
-      <Navbar/>
-      Resume
+        <Navbar/>
+        Experience
     </div>
   )
 }
 
-export default Resume
+export default Experience

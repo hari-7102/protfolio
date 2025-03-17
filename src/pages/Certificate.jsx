@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-const Resume = () => {
+const Certificate = () => {
   return (
     <div>
-      <Navbar/>
-      Resume
+        <Navbar/>
+        Certificate
     </div>
   )
 }
 
-export default Resume
+export default Certificate

@@ -3,21 +3,24 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const navbar = [
-    { name: 'Home', link: '/' },
-    { name: 'About', link: '/about' },
-    { name: 'Contact', link: '/contact' },
+   
+    // { name: 'About', link: '/about' },
+    { name: 'Skills', link: '/skills' },
+    { name: 'Experience', link: '/experience' }, 
     { name: 'Project', link: '/project' },
     { name: 'Resume', link: '/resume' },
+    { name: 'Certificate', link: '/certificate' },
+    { name: 'Contact ', link: '/contact' },
   ];
 
   return (
-    <nav className="bg-gray-400 w-72 h-screen flex flex-col items-start px-10 py-32 shadow-lg">
-      <ul className="w-full space-y-11">
+    <nav className=" bg-yellow-500 text-base py-1.5">
+      <ul className="flex justify-end items-center gap-9 mx-14 py-2.5 text-white ">
         {navbar.map((item, index) => (
-          <li key={index} className="w-full">
+          <li key={index} className="">
             <Link
               to={item.link}
-              className="block text-black hover:text-gray-800 text-2xl font-semibold py-3 pl-4 rounded-md hover:bg-gray-300 transition duration-300"
+              className="bg-black px-3 py-1 rounded-lg my-2  "
             >
               {item.name}
             </Link>
