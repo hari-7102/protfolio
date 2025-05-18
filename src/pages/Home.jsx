@@ -9,7 +9,15 @@ import { Button, Card, CardContent, Typography } from '@mui/material';
 
 import { AiFillGithub } from "react-icons/ai";
 
+import { FaGithub } from "react-icons/fa6";
+
+import { SlCallIn } from "react-icons/sl";
+
+import { GoMail } from "react-icons/go";
+
+
 import { FaLinkedin } from "react-icons/fa";
+import ScrollToTop from "../components/ScrolltoTop";
 
 const Home = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -67,11 +75,13 @@ const handleSubmit = async (event) => {
 
 
   return (  
-    <div className="bg-gray-100">
+    
+    <div className="bg-gray-950">
+      
       <Navbar />
 
       {/* Home Section */}
-      <div className="flex flex-col-reverse bg-gray-950 lg:flex-row items-center justify-evenly min-h-screen px-8 lg:px-24">
+      <div className="flex flex-col-reverse bg-gray-950 lg:flex-row items-center justify-center lg:justify-evenly min-h-screen px-8 lg:px-24">
         <motion.div
           className="flex flex-col space-y-4 text-center lg:text-left"
           initial={{ opacity: 0, x: -100 }}
@@ -104,7 +114,7 @@ const handleSubmit = async (event) => {
           >
             React Developer
           </motion.p>
-          <div className="flex items-center gap- text-3xl cursor-pointer">
+          <div className="flex items-center lg:justify-start justify-center gap- text-3xl cursor-pointer">
       {/* GitHub Icon with Hover Text */}
       <div className="relative group">
       <a
@@ -113,7 +123,7 @@ const handleSubmit = async (event) => {
         rel="noopener noreferrer"
         className="flex justify-center"
       >
-        <AiFillGithub className="w-12 text-black" />
+        <FaGithub className="w-12 text-white" />
         <span className="absolute left-1/2 -translate-x-1/2 mt-14 text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
           GitHub
         </span>
@@ -128,7 +138,7 @@ const handleSubmit = async (event) => {
         rel="noopener noreferrer"
         className="flex justify-center"
       >
-        <FaLinkedin className="w-12" />
+        <FaLinkedin className="w-12  text-white" />
         <span className="absolute left-1/2 -translate-x-1/2 mt-14 text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
           LinkedIn
         </span>
@@ -138,61 +148,64 @@ const handleSubmit = async (event) => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1 }}  
         >
-          <motion.img
-            src="https://www.inmakes.com/assets/img/services-image/2.png"
-            alt="React Developer"
-            className="w-[90%] md:w-[34rem] h-auto "
-            whileHover={{ scale: 1.1, rotate: 3 }}
-            transition={{ duration: 0.5 }}
-          />
+<motion.img
+  src="https://www.inmakes.com/assets/img/services-image/2.png"
+  alt="React Developer"
+  className="hidden md:block w-[34rem] h-auto"
+  whileHover={{ scale: 1.1, rotate: 3 }}
+  transition={{ duration: 0.5 }}
+/>
+
+
         </motion.div>
       </div>
 
       {/* About Section */}
-      <div className="flex justify-center bg-gray-950  items-center min-h-screen  px-6 lg:px-0" id="about" smooth={true}
-        duration={1000}  >
-        <motion.div
-          className="border border-violet-800 bg-gray-900 flex flex-col justify-center items-center 
-            p-6 rounded-2xl w-full md:w-[70%] lg:w-[50%]  shadow-xl 
-            transition-transform duration-300 hover:scale-105"
-          
-        >
-          <motion.h1
-            className="text-4xl font-semibold text-violet-700 mb-4 text-center"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            About Me
-          </motion.h1>
+      <div className="flex justify-center bg-gray-950  items-center min-h-screen  px-6 lg:px-0" id="about" 
+         >
+       <motion.div
+  initial={{ opacity: 0, y: -50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.9, ease: "easeInOut", delayChildren: 0.2, staggerChildren: 0.2 }}
+  className="border border-violet-800 bg-gray-950 flex flex-col justify-center items-center 
+    p-6 rounded-2xl w-full md:w-[70%] lg:w-[50%] shadow-[0px_0px_26px_-12px_#ad62f0]  
+    transition-transform duration-300 hover:scale-105"
+>
+  <motion.h1
+    className="text-4xl font-semibold text-violet-700 mb-4 text-center"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
+    About Me
+  </motion.h1>
 
-          <motion.p
-            className="text-lg text-white text-center leading-relaxed px-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 1 }}
-          >
-            Highly skilled React Developer with a strong track record of building dynamic, high-performance web applications. Proficient in React.js and modern JavaScript (ES6+), with deep expertise in state management, API integrations, and component-based architecture. Experienced in crafting responsive, accessible, and visually appealing user interfaces using Tailwind CSS, with a strong emphasis on performance and user experience. Skilled in implementing Framer Motion for smooth, modern animations that elevate UI interactions and engagement.
+  <motion.p
+    className="text-lg text-white text-center leading-relaxed px-4"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, ease: "easeOut" }}
+  >
+    Highly skilled React Developer with a strong track record of building dynamic, high-performance web applications. Proficient in React.js and modern JavaScript (ES6+), with deep expertise in state management, API integrations, and component-based architecture. Experienced in crafting responsive, accessible, and visually appealing user interfaces using Tailwind CSS, with a strong emphasis on performance and user experience. Skilled in implementing Framer Motion for smooth, modern animations that elevate UI interactions and engagement.
+  </motion.p>
+</motion.div>
 
-
-          </motion.p>
-        </motion.div>
       </div>
         {/* Skills */}
      <section id="skills" className="w-full bg-gray-950 py-24 min-h-screen text-gray-200">
   <div className="max-w-6xl mx-auto px-6">
-    <h2 className="text-4xl font-bold text-center text-violet-500 mb-16">Technical Skills</h2>
+    <h2 className="text-5xl font-bold text-center text-violet-500 mb-28">Technical Skills</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
       {/* Skill Card Component */}
       {[
         {
           title: "Frontend",
-          skills: ["HTML5", "CSS3", "JavaScript ES7", "Tailwind CSS", "React.js"]
+          skills: ["HTML5", "JavaScript ES7", "Tailwind CSS", "React.js" , "Framer Motion"]
         },
         {
           title: "Backend",
@@ -207,13 +220,19 @@ const handleSubmit = async (event) => {
           skills: ["Git", "GitHub", "VS Code", "Vercel"]
         }
       ].map((category, index) => (
-        <div
+        <motion.div
           key={index}
-          className="bg-gray-900 border border-violet-800 rounded-2xl p-6 shadow-xl transition-transform transform hover:-translate-y-2 hover:shadow-violet-800/50"
+
+                          
+                 initial={{ opacity: 0, y: 30 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.4, delay: index * 0.3 }}
+                 viewport={{ once: true, amount: 0.2 }}
+          className="bg-gray-950 border border-violet-800 rounded-2xl p-6 shadow-xl transition-transform transform hover:-translate-y-2 hover:shadow-violet-800/50"
         >
           <h3 className="text-2xl font-semibold text-violet-400 mb-6 text-center">
             {category.title}
-          </h3>
+          </h3> 
           <ul className="space-y-3">
             {category.skills.map((skill, i) => (
               <li
@@ -225,7 +244,7 @@ const handleSubmit = async (event) => {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       ))}
     </div>
   </div>
@@ -241,7 +260,13 @@ const handleSubmit = async (event) => {
         <div className="max-w-6xl mx-auto px-4 ">
           <h2 className="text-4xl font-bold text-center text-violet-700 mb-10">Experience</h2>
 
-          <div className="bg-gray-950 border border-violet-700 rounded-2xl p-6 mb-18 shadow-[0px_0px_26px_-12px_#ad62f0]                 ">
+          <motion.div 
+              initial={{ opacity: 0, x: 45 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4}}
+                 viewport={{ once: true, amount: 0.2 }}
+
+          className="bg-gray-950 border border-violet-700 rounded-2xl p-6 mb-18 shadow-[0px_0px_26px_-12px_#ad62f0]                 ">
             <div className="flex justify-between items-center mb-2">
               <h3 className="text-2xl font-semibold text-violet-800">ReactJs Developer </h3>
               <span className="text-sm text-white">Dec 2024 - Present</span>
@@ -272,12 +297,18 @@ const handleSubmit = async (event) => {
               </div> */}
             </div>
 
-          </div>
+          </motion.div>
 
-          <div className="bg-gray-950 border border-violet-900     shadow-[0px_0px_26px_-12px_#ad62f0]        rounded-2xl p-6 mb-6">
+          <motion.div 
+                      initial={{ opacity: 0, x: 45 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1}}
+                 viewport={{ once: true, amount: 0.2 }}
+
+          className="bg-gray-950 border border-violet-900     shadow-[0px_0px_26px_-12px_#ad62f0]        rounded-2xl p-6 mb-6">
             <div className="flex justify-between items-center mb-2">
               <h3 className="text-2xl font-semibold text-violet-800">Python Full Stack Developer Intern</h3>
-              <span className="text-sm text-gray-200">Jun 2024 - Nov 2024</span>
+              <span className="text-sm text-gray-200">Aug 2024 - Nov 2024</span>
             </div>
             <p className="text-white italic mb-2">Inmakes Infotech - Chennai</p>
             <ul className="list-disc mx-7 text-gray-300 space-y-1">
@@ -286,7 +317,7 @@ const handleSubmit = async (event) => {
               <li>Learned and applied frontend tools like HTML, CSS, JavaScriptand Reactjs enhancing UI/UX responsiveness and interactivity.</li>
               <li>Collaborated in a team environment, participated in code reviews, and used Git for version control.</li>
             </ul>
-          </div>
+          </motion.div>
 
          
 
@@ -295,11 +326,17 @@ const handleSubmit = async (event) => {
 
       {/* Project */}
       <section id="project" className="bg-gray-950 py-12">
-  <div className="max-w-6xl mx-auto px-4">
+  <div className="max-w-6xl mx-auto px-4 mt-10">
     <h2 className="text-4xl font-bold text-center text-violet-800 mb-10">Projects</h2>
 
-    {/* Project Card */}
-    <div className="bg-gray-950 border border-violet-900 rounded-xl shadow-[0px_0px_26px_-12px_#ad62f0]       p-6 mb-16">
+    {/* Project Card */} 
+    <motion.div 
+          initial={{ opacity: 0, x: 45 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4}}
+                 viewport={{ once: true, amount: 0.2 }}
+          
+    className="bg-gray-950 border border-violet-900 rounded-xl shadow-[0px_0px_26px_-12px_#ad62f0]       p-6 mb-16">
       <h3 className="text-2xl font-semibold text-gray-300 mb-2">Admin Panel Development</h3>
       <ul className="list-disc mx-8 text-gray-300 space-y-2 mb-4">
   <li>Developed and managed a robust Admin Panel using <strong className="text-violet-800">React.js</strong>, enhancing data management and user access control.</li>
@@ -325,8 +362,14 @@ const handleSubmit = async (event) => {
       >
         View Project →
       </a>
-    </div>
-    <div className="bg-gray-950 border border-violet-900 rounded-xl  shadow-[0px_0px_26px_-12px_#ad62f0]            p-6 mb-16">
+    </motion.div>
+    <motion.div 
+        initial={{ opacity: 0, x: 45 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8}}
+                 viewport={{ once: true, amount: 0.2 }}
+
+    className="bg-gray-950 border border-violet-900 rounded-xl  shadow-[0px_0px_26px_-12px_#ad62f0]            p-6 mb-16">
       <h3 className="text-2xl font-semibold text-gray-300 mb-2">Static Website Development</h3>
       <ul className="list-disc mx-8 text-gray-300 space-y-2 mb-4">
   <li>Developed and integrated About and Contact pages in the Products Project using <strong className="text-violet-800">React.js</strong>, focusing on modular design and user engagement.</li>
@@ -351,8 +394,14 @@ const handleSubmit = async (event) => {
       >
         View Project →
       </a>
-    </div>
-    <div className="bg-gray-950 border border-violet-900 rounded-xl   shadow-[0px_0px_26px_-12px_#ad62f0]          p-6 mb-6">
+    </motion.div>
+     <motion.div 
+        initial={{ opacity: 0, x: 45 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.3}}
+                 viewport={{ once: true, amount: 0.2 }}
+
+    className="bg-gray-950 border border-violet-900 rounded-xl   shadow-[0px_0px_26px_-12px_#ad62f0]          p-6 mb-16">
       <h3 className="text-2xl font-semibold text-gray-300 mb-2">Replica of Rise Website </h3>
       <ul className="list-disc mx-8 text-gray-300 space-y-2 mb-4">
   {/* <li>
@@ -412,13 +461,81 @@ const handleSubmit = async (event) => {
       >
         View Project →
       </a>
-    </div>
+    </motion.div>
+    <motion.div 
+        initial={{ opacity: 0, x: 45 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.8}}
+                 viewport={{ once: true, amount: 0.2 }}
+
+    className="bg-gray-950 border border-violet-900 rounded-xl   shadow-[0px_0px_26px_-12px_#ad62f0]          p-6 mb-6">
+      <h3 className="text-2xl font-semibold text-gray-300 mb-2">Nexcent Website </h3>
+      <ul className="list-disc mx-8 text-gray-300 space-y-2 mb-4">
+  {/* <li>
+    Developed and integrated About and Contact pages in the Products Project using
+    <strong className="text-violet-800"> React.js</strong>, focusing on modular design and user engagement.
+  </li>
+  <li>
+    Implemented clean, reusable components and managed form inputs using
+    <strong className="text-violet-800"> useState</strong> for interactive user communication.
+  </li>
+  <li>
+    Utilized <strong className="text-violet-800">useEffect</strong> to handle side effects and enhance component responsiveness.
+  </li>
+  <li>
+    Applied responsive styling with <strong className="text-violet-800">Tailwind CSS</strong> to ensure mobile-friendly layouts and consistent visual branding.
+  </li>
+  <li>
+    Enhanced overall user experience through a clean codebase and smooth page navigation.
+  </li> */}
+</ul>
+
+<ul className="list-disc mx-8 text-gray-300 space-y-2 mb-4">
+  <li>
+    Built a responsive replica of the Nexcent website using
+    <strong className="text-violet-800"> HTML</strong>,
+    <strong className="text-violet-800"> Tailwind CSS</strong>,
+    <strong className="text-violet-800"> JavaScript</strong>, and
+    <strong className="text-violet-800"> Framer Motion</strong> to enhance frontend development skills.
+  </li>
+  <li>
+    Implemented a <strong className="text-violet-800">mobile-first design</strong> approach to ensure seamless user experience across all device sizes.
+  </li>
+  <li>
+    Focused on <strong className="text-violet-800">clean UI structure</strong> and consistent design patterns to maintain visual coherence throughout the project.
+  </li>
+  <li>
+    Utilized <strong className="text-violet-800">Framer Motion</strong> to create smooth, engaging animations and improve overall interactivity.
+  </li>
+  <li>
+    Prioritized <strong className="text-violet-800">responsive layout</strong>, code reusability, and performance optimization across the frontend.
+  </li>
+</ul>
+
+
+      <div className="flex flex-wrap gap-3 mb-4">
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">React.js</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Javascript ES7</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Framer Motion</span>
+      </div>
+      <a
+        href="#"
+        className="text-violet-700 hover:underline font-medium"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        View Project →
+      </a>
+    </motion.div>
+   
 
   </div>
 </section>
 
 {/* Contact  */}
-<div id="contact" className="min-h-screen bg-gray-950 flex items-center justify-center p-4">
+<div id="contact" className="min-h-screen bg-gray-950 mt-8 flex flex-col items-center justify-center p-4">
       <motion.div
         className="bg-gray-950 rounded-2xl  p-8 border   shadow-[0px_0px_26px_-12px_#ad62f0]   border-violet-700 max-w-lg w-full"
         initial={{ opacity: 0, y: 50 }}
@@ -494,11 +611,30 @@ const handleSubmit = async (event) => {
             Send Message
           </motion.button>
         </form>
+
       </motion.div>
+        <div className="flex items-center space-x-2 mt-11 text-gray-300">
+  <SlCallIn className="text-violet-800" />
+ <a href="tel:+91 6379749009" className="text-base font-medium hover:underline" data-tooltip="Phone: +91 63797 49009"><span>+91 6383037102</span></a>
+</div>
+
+        <div className="flex items-center space-x-2 mt-6 text-gray-300">
+  <GoMail className="text-violet-800" />
+  <a
+    href="mailto:hariharanbvn28@gmail.com"
+    className="text-base font-medium hover:underline"
+  >
+    hariharanbvn28@gmail.com
+  </a>
+</div>
+
+
+        <p className="text-purple-900 text-xl items-center mt-10">© 2025 Hariharan S . All rights reserved.</p>
+
     </div>
 
-
-
+      
+    
     </div>
   );
 };
