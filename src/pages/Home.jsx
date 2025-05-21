@@ -354,14 +354,14 @@ const handleSubmit = async (event) => {
         <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Framer Motion</span>
         <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">REST API</span>
       </div>
-      <a
+      {/* <a
         href="#"
         className="text-violet-700 hover:underline font-medium"
         target="_blank" 
         rel="noopener noreferrer"
       >
         View Project →
-      </a>
+      </a> */}
     </motion.div>
     <motion.div 
         initial={{ opacity: 0, x: 45 }}
@@ -386,14 +386,15 @@ const handleSubmit = async (event) => {
         <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Javascript ES7</span>
         <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Framer Motion</span>
       </div>
-      <a
+      {/* <a
         href="#"
         className="text-violet-700 hover:underline font-medium"
         target="_blank" 
         rel="noopener noreferrer"
+        data-tooltip="Company Project"
       >
         View Project →
-      </a>
+      </a> */}
     </motion.div>
      <motion.div 
         initial={{ opacity: 0, x: 45 }}
@@ -453,14 +454,14 @@ const handleSubmit = async (event) => {
         <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Javascript ES7</span>
         <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Framer Motion</span>
       </div>
-      <a
-        href="#"
-        className="text-violet-700 hover:underline font-medium"
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        View Project →
-      </a>
+    <a
+  href="https://rise-web-one.vercel.app/"
+  className="text-violet-700 hover:underline font-medium"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View Project →
+</a>
     </motion.div>
     <motion.div 
         initial={{ opacity: 0, x: 45 }}
@@ -521,7 +522,7 @@ const handleSubmit = async (event) => {
         <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Framer Motion</span>
       </div>
       <a
-        href="#"
+        href="https://lanching-page.vercel.app/"
         className="text-violet-700 hover:underline font-medium"
         target="_blank" 
         rel="noopener noreferrer"
@@ -535,7 +536,8 @@ const handleSubmit = async (event) => {
 </section>
 
 {/* Contact  */}
-<div id="contact" className="min-h-screen bg-gray-950 mt-8 flex flex-col items-center justify-center p-4">
+<div id="contact" className="min-h-screen pt-12 pb-16 bg-gray-950 flex flex-col items-center justify-end">
+
       <motion.div
         className="bg-gray-950 rounded-2xl  p-8 border   shadow-[0px_0px_26px_-12px_#ad62f0]   border-violet-700 max-w-lg w-full"
         initial={{ opacity: 0, y: 50 }}
@@ -613,24 +615,26 @@ const handleSubmit = async (event) => {
         </form>
 
       </motion.div>
+
+      
         <div className="flex items-center space-x-2 mt-11 text-gray-300">
   <SlCallIn className="text-violet-800" />
  <a href="tel:+91 6379749009" className="text-base font-medium hover:underline" data-tooltip="Phone: +91 63797 49009"><span>+91 6383037102</span></a>
 </div>
 
-        <div className="flex items-center space-x-2 mt-6 text-gray-300">
-  <GoMail className="text-violet-800" />
-  <a
-    href="mailto:hariharanbvn28@gmail.com"
-    className="text-base font-medium hover:underline"
-  >
-    hariharanbvn28@gmail.com
-  </a>
-</div>
+  <div className="flex items-center space-x-2 mt-6 text-gray-300">
+    <GoMail className="text-violet-800" />
+    <a
+      href="mailto:hariharanbvn28@gmail.com"
+      className="text-base font-medium hover:underline"
+    >
+      hariharanbvn28@gmail.com
+    </a>
+  </div>
 
-
-        <p className="text-purple-900 text-xl items-center mt-10">© 2025 Hariharan S . All rights reserved.</p>
-
+  <p className="text-purple-900 text-lg items-center mt-8">
+    © 2025 Hariharan S . All rights reserved.
+  </p>
     </div>
 
       

@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="fixed bg-gray-950 top-0 left-0 w-full  text-base z-50 ">
       <div className="flex justify-between items-center px-6 py-3">
         <p
-          className="text-violet-900 text-3xl font-bold cursor-pointer"
+          className="text-purple-900 text-3xl font-bold cursor-pointer"
           onClick={() => navigate('/')}
         >
           Hariharan
@@ -33,9 +33,9 @@ const Navbar = () => {
         {/* Hamburger Button */}
         <div className="md:hidden">
           {menuOpen ? (
-            <X className="text-black cursor-pointer" onClick={toggleMenu} />
+            <X className="text-white cursor-pointer" onClick={toggleMenu} />
           ) : (
-            <Menu className="text-black cursor-pointer" onClick={toggleMenu} />
+            <Menu className="text-white cursor-pointer" onClick={toggleMenu} />
           )}
         </div>
 
