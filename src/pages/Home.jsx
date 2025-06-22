@@ -144,6 +144,11 @@ const handleSubmit = async (event) => {
         </span>
         </a>
       </div>
+      <div>
+        <a href="/Hari-React.pdf">
+        <span className="text-white text-lg font-serif ml-3">Download CV</span>
+        </a>
+      </div>
     </div>
         </motion.div>
 
@@ -396,6 +401,10 @@ const handleSubmit = async (event) => {
         View Project →
       </a> */}
     </motion.div>
+
+    <h2 className="text-4xl font-bold text-center text-violet-800 mb-10">Personal Projects</h2>
+
+
      <motion.div 
         initial={{ opacity: 0, x: 45 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -463,10 +472,67 @@ const handleSubmit = async (event) => {
   View Project →
 </a>
     </motion.div>
+     <motion.div 
+        initial={{ opacity: 0, x: 45 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.6}}
+                 viewport={{ once: true, amount: 0.2 }}
+
+    className="bg-gray-950 border border-violet-900 rounded-xl   shadow-[0px_0px_26px_-12px_#ad62f0]          p-6 mb-16">
+      <h3 className="text-2xl font-semibold text-gray-300 mb-2">WorldSky Website </h3>
+      <ul className="list-disc mx-8 text-gray-300 space-y-2 mb-4">
+
+</ul>
+
+<ul className="list-disc mx-8 text-gray-300 space-y-2 mb-4">
+  <li>
+    Built a responsive website of WorldSky using 
+    <strong className="text-violet-800"> React.js</strong>, 
+    <strong className="text-violet-800"> HTML</strong>, 
+    <strong className="text-violet-800"> Tailwind CSS</strong>, and 
+    <strong className="text-violet-800"> JavaScript</strong> to enhance frontend development proficiency.
+  </li>
+  <li>
+    Designed a <strong className="text-violet-800">mobile-first</strong> layout with responsive behavior to ensure seamless user experience across all devices.
+  </li>
+  <li>
+    Utilized <strong className="text-violet-800">CSS Grid</strong> and <strong className="text-violet-800">Tailwind utilities</strong> to create structured and scalable layouts.
+  </li>
+    <li>
+    Developed <strong className="text-violet-800">reusable React components</strong> to improve performance and reduce loading times.
+  </li>
+  <li>
+    Integrated <strong className="text-violet-800">Framer Motion</strong> to apply <strong className="text-violet-800">Advanced Animations</strong>, enhancing interactivity and UI appeal.
+  </li>
+  <li>
+    Focused on improving skill sets by emphasizing clean UI design, reusable components, and smooth animations throughout the project.
+  </li>
+</ul>
+
+
+
+      <div className="flex flex-wrap gap-3 mb-4">
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">React.js</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Javascript ES7</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Framer Motion</span>
+        <span className="bg-violet-100 text-violet-800 text-sm font-medium px-3 py-1 rounded-full">Advanced Animation</span>
+      </div>
+    <a
+  href="https://hari-worldsky.vercel.app/"
+  className="text-violet-700 hover:underline font-medium"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View Project →
+</a>
+    </motion.div>
     <motion.div 
         initial={{ opacity: 0, x: 45 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.8}}
+          transition={{ duration: 1.9}}
                  viewport={{ once: true, amount: 0.2 }}
 
     className="bg-gray-950 border border-violet-900 rounded-xl   shadow-[0px_0px_26px_-12px_#ad62f0]          p-6 mb-6">
