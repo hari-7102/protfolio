@@ -15,6 +15,8 @@ import { SlCallIn } from "react-icons/sl";
 
 import { GoMail } from "react-icons/go";
 
+import Img from '../assets/Image.png'
+
 
 import { FaLinkedin } from "react-icons/fa";
 import ScrollToTop from "../components/ScrolltoTop";
@@ -158,10 +160,10 @@ const handleSubmit = async (event) => {
           transition={{ duration: 1 }}  
         >
 <motion.img
-  src="https://www.inmakes.com/assets/img/services-image/2.png"
+  src={Img}
   alt="React Developer"
   className="hidden md:block w-[34rem] h-auto"
-  whileHover={{ scale: 1.1, rotate: 3 }}
+  // whileHover={{ scale: 1.1, rotate: 3 }}
   transition={{ duration: 0.5 }}
 />
 
