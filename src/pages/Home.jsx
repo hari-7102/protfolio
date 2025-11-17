@@ -179,7 +179,7 @@ const handleSubmit = async (event) => {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.9, ease: "easeInOut", delayChildren: 0.2, staggerChildren: 0.2 }}
   className="border border-violet-800 bg-gray-950 flex flex-col justify-center items-center 
-    p-6 rounded-2xl w-full md:w-[70%] lg:w-[50%] shadow-[0px_0px_26px_-12px_#ad62f0]  
+    p-6 rounded-2xl w-full md:w-[70%] lg:w-[60%] shadow-[0px_0px_26px_-12px_#ad62f0]  
     transition-transform duration-300 hover:scale-105"
 >
   <motion.h1
@@ -197,7 +197,7 @@ const handleSubmit = async (event) => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, ease: "easeOut" }}
   >
-    Highly skilled React Developer with a strong track record of building dynamic, high-performance web applications. Proficient in React.js and modern JavaScript (ES6+), with deep expertise in state management, API integrations, and component-based architecture. Experienced in crafting responsive, accessible, and visually appealing user interfaces using Tailwind CSS, with a strong emphasis on performance and user experience. Skilled in implementing Framer Motion for smooth, modern animations that elevate UI interactions and engagement.
+    I’m Hariharan, a Web Developer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js) with experience in building responsive, scalable, and user-friendly applications. I have hands-on expertise in developing dynamic UIs using React, Tailwind CSS, and Material UI, creating REST APIs with Express.js and Node.js, and integrating frontend and backend for robust full-stack solutions. My work includes implementing authentication systems using JWT and sessions, developing admin panel dashboards with role-based access control, and building a complete blog application using the MERN stack. I’ve created multiple dynamic web applications with modern UI and optimized performance, and I also have experience deploying applications on platforms like Vercel and Netlify. I enjoy solving real-world problems through clean code and modern development practices.
   </motion.p>
 </motion.div>
 
@@ -212,19 +212,19 @@ const handleSubmit = async (event) => {
       {[
         {
           title: "Frontend",
-          skills: ["HTML5", "JavaScript ES7", "Tailwind CSS", "React.js" , "Framer Motion"]
+          skills: ["React js", "JavaScript", "Tailwind CSS", "HTML" , "Framer Motion"]
         },
         {
           title: "Backend",
-          skills: ["Python", "Django", "REST API", "Express.js"]
+          skills: ["Node js", "RESTful API", "Express Js", "JWT Authentication"]
         },
         {
           title: "Database",
-          skills: ["MySQL", "MongoDB"]
+          skills: ["MongoDB", "MYSQL"]
         },
         {
           title: "Tools",
-          skills: ["Git", "GitHub", "VS Code", "Vercel"]
+          skills: ["Git", "GitHub", "Postman", "Vercel"]
         }
       ].map((category, index) => (
         <motion.div
@@ -275,7 +275,7 @@ const handleSubmit = async (event) => {
 
           className="bg-gray-950 border border-violet-700 rounded-2xl p-6 mb-18 shadow-[0px_0px_26px_-12px_#ad62f0]                 ">
             <div className="flex justify-between items-center mb-2">
-              <h3 className="text-2xl font-semibold text-violet-800">ReactJs Developer </h3>
+              <h3 className="text-2xl font-semibold text-violet-800">Web Developer </h3>
               <span className="text-sm text-white">Dec 2024 - Present</span>
             </div>
             <p className="text-white italic mb-2">Regent Info Soutions - Coimbatore</p>
@@ -285,7 +285,8 @@ const handleSubmit = async (event) => {
                 {/* <p className="text-xl text-white mb-2 underline-offset-8 underline"> Admin Panel Development</p> */}
                 <ul className="list-disc mx-7  text-gray-300 space-y-1">
                   <li>Developed Scalable Web Applications: Built and optimized user interfaces using React.js, enhancing performance and maintainability across multiple modules..</li>
-                  <li>State & Lifecycle Management: Implemented advanced React patterns using useState, useEffect, and Context API to handle complex UI logic and asynchronous data flows</li>
+                  {/* <li>State & Lifecycle Management: Implemented advanced React patterns using useState, useEffect, and Context API to handle complex UI logic and asynchronous data flows</li> */}
+                  <li>I specialize in building efficient, scalable, and secure backend systems using Node.js and Express.js. My work focuses on designing secure architectures with JWT and RESTful APIs, optimizing performance, and ensuring reliable communication between the server and client.</li>
                   <li>UI/UX Implementation: Collaborated with design teams to build responsive, visually appealing interfaces using Tailwind CSS and Material-UI, improving user engagement.</li>
                   {/* <li>Responsive Design: Designed a user-friendly, responsive UI with Tailwind CSS and Material-UI, ensuring accessibility on all devices..</li>
                   <li>Optimized Performance: Focused on improving performance and scalability of the application for better user experience.</li> */}
