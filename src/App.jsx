@@ -10,6 +10,8 @@ import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import Certificate from './pages/Certificate';
 
+
+
 const App = () => {
   return (
     <div>
